@@ -5,8 +5,9 @@ angular.module('app')
   'viewportValue',
   'audioService',
   'trackListValue',
+   'keysService',
    '$rootScope',
-  function($window, viewportValue, audioService, trackListValue,  $rootScope){
+  function($window, viewportValue, audioService, trackListValue, keysService, $rootScope){
   // Runs during compile
 
     return {
@@ -146,10 +147,11 @@ angular.module('app')
 
           var tempProgress;
           // //update the 
-          $scope.updateProgress = function() {
-            var progress = $scope.audio.progress;
+          $scope.updateProgress = function(progress) {
+              if (!progress) {
+                progress = $scope.audio.progress;
+              }
               if (typeof(progress) === 'number') {
-                var progressInPx = maxProgressWidth * progress;
                 el.currentDuration.css({
                   width:  (progress * 100) +'%'
                 });
@@ -163,7 +165,7 @@ angular.module('app')
                 audioService.pause();
               }
 
-          } 
+          }
 
 
           // //initiallize
@@ -254,19 +256,21 @@ angular.module('app')
               var parentWidth = $(e.target).parent().width();
 
             //calculate % progress
-            var progressInPercent = (mouseX / parentWidth);
+            var  progressInPercent = (mouseX / parentWidth);
 
             //if audio exits and playable
             if (audioService.audio && audioService.audio.canPlay) {
               // var setCurrentTime = progressInPercent * audioService.audio.duration;//in seconds
-              audioService.audio.setProgress(progressInPercent);
+              $scope.setTrackDuration(progressInPercent);
               $scope.seeked++;
-
-              el.changeDurationOnhover_1.width(0);
-              el.currentDuration.width(mouseX);
             };
           }
 
+          $scope.setTrackDuration = function (progressInDecimal){
+            audioService.audio.setProgress(progressInDecimal);
+            el.changeDurationOnhover_1.width(0);
+            $scope.updateProgress(progressInDecimal);
+          }
 
 
           //called on mousemove
@@ -313,15 +317,19 @@ angular.module('app')
             if (audioService.audio) {
               // var setCurrentTime = progressInPercent * audioService.audio.duration;//in seconds
               volumeInPercent = Math.round(volumeInPercent * 100)/100;
-              audioService.audio.setVolume(volumeInPercent);
-              audioService.volume = volumeInPercent;
-              //update vol icon
-              $scope.updateVolumeIcon(volumeInPercent);
-
-              el.currentVolume.width(mouseX);
-              //reset vol change hint width
-              el.changeVolOnhover_1.width(0);
+              $scope.setVolume(volumeInPercent);
             }; 
+          }
+
+          $scope.setVolume = function (volumeInDecimal){
+            audioService.audio.setVolume(volumeInDecimal);
+            audioService.volume = volumeInDecimal;
+            //update vol icon
+            $scope.updateVolumeIcon(volumeInDecimal);
+
+            el.currentVolume.width(volumeInDecimal * 100);
+            //reset vol change hint width
+            el.changeVolOnhover_1.width(0);
           }
 
           $scope.muteToggle = function() {
@@ -356,37 +364,8 @@ angular.module('app')
           })
 
           $scope.like = function() {
-            console.log(audioService.playUrl);
+            console.log('+1 like');
           }
-          //
-
-          // // el.pointer.bind('mouseover', function(e) {
-          // //   e.preventDefault();
-
-          // //   var mouseXPx = el.pointer.css('left');
-          // //   var progChangeWidth = mouseXPx.slice(0, (mouseXPx.length - 2));
-          // //   el.progressBarChange.css({
-          // //     width: progChangeWidth + 'px'
-          // //   });
-          // // });
-
-          // // el.pointer.bind('mouseout', function(e){
-          // //   e.preventDefault();
-          // //   el.progressBarChange.width(0);
-          // // });
-
-          // //response on window resize
-          // angular.element($window).bind('resize', function(){
-          //   var width = $window.innerWidth;
-
-          //   var marginLeft = el.progressBarBackground.css('margin-left');
-          //   var setWidth = el.progressBarWrapper.width() - el.currentProgress.width() - el.maxProgress.width();
-          //   maxProgressWidth = el.barHover.width();
-          //   el.progressBarBackground.css({
-          //     width: setWidth +'px',
-          //   });
-          // });
-
 
           // //Event listeners for player controls
           $scope.playPause =  function() {
@@ -395,7 +374,46 @@ angular.module('app')
             }else{
               audioService.play();
             }
+          }; 
+
+          // //Event listeners for player controls
+          $scope.next =  function() {
+
+            if (audioService.playing) {
+              audioService.pause();
+            }
+
+            //find the current track position
+            audioService.search(trackListValue, function (id){
+              if( trackListValue[++id] ){
+                audioService.setUrl( (trackListValue[id]).url ).play();
+              }else{
+                id = 0;
+                audioService.setUrl( trackListValue[id].url ).play();
+              }
+            })
+            //now play the next track
           };
+
+          // //Event listeners for player controls
+          $scope.previous =  function() {
+            if (audioService.playing) {
+              audioService.pause();
+            }
+
+            //find the current track position
+            audioService.search(trackListValue, function (id){
+              if( trackListValue[--id] ){
+                audioService.setUrl( (trackListValue[id]).url ).play();
+              }else{
+                id = trackListValue.length - 1;
+                audioService.setUrl( trackListValue[id].url ).play();
+              }
+            })
+            //now play the next track
+          };
+
+          
 
           //update track info
           $rootScope.$on('audio:play', function(event , data) {
@@ -431,6 +449,66 @@ angular.module('app')
 
             });//end forEach
           });
+
+          $(window).on('keyup', function(e) {
+            e.preventDefault();
+
+            //short cut for play/pause
+            keysService.on('space', e, function (){
+              audioService.playing ? audioService.pause() : audioService.play();
+            });
+
+            //short cut for track forward
+            keysService.on('left', e, function (){
+              var progress = 100 * $scope.audio.progress ;
+              progress = Math.round(progress * 100) / 100
+              progress = (progress - 5);
+
+              if (progress > 0) {
+                $scope.setTrackDuration(progress / 100); 
+              }else{
+                $scope.setTrackDuration(0); 
+              }
+            });
+
+            //short cut for track backword
+            keysService.on('right', e, function (){
+              var progress = 100 * $scope.audio.progress ;
+              progress = Math.round(progress * 100) / 100
+              progress = (progress + 5);
+
+              if (progress < 100) {
+                $scope.setTrackDuration(progress/100); 
+              }else{
+                $scope.setTrackDuration(1); 
+              }
+            });
+
+            keysService.on('up', e, function (){
+              var volume = 100 * $scope.audio.volume ;
+              volume = Math.round(volume * 100) / 100
+              volume = (volume + 5);
+
+              if (volume < 100) {
+                $scope.setVolume(volume/100); 
+              }else{
+                $scope.setVolume(1); 
+              }
+
+            });
+
+            keysService.on('down', e, function (){
+              var volume = 100 * $scope.audio.volume ;
+              volume = Math.round(volume * 100) / 100
+              volume = (volume - 5);
+
+              if (volume > 0) {
+                $scope.setVolume(volume/100); 
+              }else{
+                $scope.setVolume(0);
+              }
+            });
+          });//end on-keyup
 
         }//end link
     };

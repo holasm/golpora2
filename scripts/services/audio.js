@@ -80,5 +80,15 @@ angular.module('app')
 
     }//end pause
 
+    self.search = function (trackListValue, cb){
+      for (var i = 0; i < trackListValue.length; i++) {
+        if ((trackListValue[i]).url === self.audio.src){
+          cb(i);
+          break;
+        }
+
+      }
+    }
+
   }//end function
 ]);
