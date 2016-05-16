@@ -1,8 +1,9 @@
 # golpora2
 
-git clone 
-bower i 
-npm i 
+git clone
+bower i
+npm i
+
 
 ######dbclick start.bat in the project directory
 
