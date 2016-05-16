@@ -1205,36 +1205,44 @@ $xxlg-layout-width:  1300px; */
   float: left;
 }
 /* line 8, ../sass/dashboard.scss */
+.container.dashboard .side-nav .row div {
+  border-left: 3px solid transparent;
+}
+/* line 12, ../sass/dashboard.scss */
 .container.dashboard .side-nav .row div:last-child {
   margin-bottom: 0;
 }
-/* line 12, ../sass/dashboard.scss */
+/* line 16, ../sass/dashboard.scss */
+.container.dashboard .side-nav .row div:hover {
+  border-left: 3px solid #007D6B;
+}
+/* line 22, ../sass/dashboard.scss */
 .container.dashboard .dashboard-view {
   float: left;
 }
-/* line 15, ../sass/dashboard.scss */
+/* line 25, ../sass/dashboard.scss */
 .container.dashboard .row.stats {
   height: 1000px;
 }
 
 @media only screen and (min-width: 332px) {
-  /* line 21, ../sass/dashboard.scss */
+  /* line 31, ../sass/dashboard.scss */
   .side-nav {
     width: 100px;
   }
 
-  /* line 24, ../sass/dashboard.scss */
+  /* line 34, ../sass/dashboard.scss */
   .dashboard-view {
     width: calc(100% - 100px);
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 29, ../sass/dashboard.scss */
+  /* line 39, ../sass/dashboard.scss */
   .side-nav {
     width: 200px;
   }
 
-  /* line 32, ../sass/dashboard.scss */
+  /* line 42, ../sass/dashboard.scss */
   .dashboard-view {
     width: calc(100% - 200px);
   }

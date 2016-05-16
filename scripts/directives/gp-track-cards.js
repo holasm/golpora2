@@ -23,7 +23,7 @@ angular.module('app')
       $scope.initialize = function () {
 
         //when some track is already playing dont disturb it
-        if (!audioService.playing && audioService.audio && !audioService.audio.src) {
+        if (!audioService.playing && !(audioService.audio && audioService.audio.src)) {
           if ($scope.trackList[0]) {
             audioService.setUrl($scope.trackList[0].url);
           }

@@ -5,8 +5,18 @@
   .side-nav{
     float: left;
 
-    .row div:last-child{
-      margin-bottom: 0;
+    .row div{
+      // transition: border-left 0.3 linear;
+      border-left: 3px solid transparent;
+
+      &:last-child{
+        margin-bottom: 0; 
+      }
+
+      &:hover{
+        // transition: border-left 0.3 linear;
+        border-left: 3px solid #007D6B;
+      }
     }
   }
   .dashboard-view{
