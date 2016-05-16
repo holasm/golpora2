@@ -1,0 +1,81 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+@media only screen and (max-width: 332px) {
+  /* line 12, ../sass/media.track.cards.scss */
+  .play-outer {
+    width: 60px;
+    height: 60px;
+  }
+  /* line 15, ../sass/media.track.cards.scss */
+  .play-outer .play-inner {
+    width: 56px;
+    height: 56px;
+  }
+  /* line 18, ../sass/media.track.cards.scss */
+  .play-outer .play-inner i {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 27, ../sass/media.track.cards.scss */
+  .play-outer {
+    width: 60px;
+    height: 60px;
+  }
+  /* line 30, ../sass/media.track.cards.scss */
+  .play-outer .play-inner {
+    width: 56px;
+    height: 56px;
+  }
+  /* line 33, ../sass/media.track.cards.scss */
+  .play-outer .play-inner i {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 53, ../sass/media.track.cards.scss */
+  .play-outer {
+    width: 80px;
+    height: 80px;
+  }
+  /* line 56, ../sass/media.track.cards.scss */
+  .play-outer .play-inner {
+    width: 76px;
+    height: 76px;
+  }
+  /* line 59, ../sass/media.track.cards.scss */
+  .play-outer .play-inner i {
+    font-size: 70px;
+  }
+}

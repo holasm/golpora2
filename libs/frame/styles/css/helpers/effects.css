@@ -1,0 +1,14 @@
+/* line 1, ../../sass/helpers/effects.scss */
+.btn-effect-1 {
+  -webkit-user-select: none;
+}
+/* line 2, ../../sass/helpers/effects.scss */
+.btn-effect-1:hover {
+  cursor: pointer;
+  background: #e3e3e3;
+}
+/* line 7, ../../sass/helpers/effects.scss */
+.btn-effect-1:active {
+  cursor: pointer;
+  background: #aaa;
+}

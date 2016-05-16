@@ -1,0 +1,99 @@
+/* line 1, ../../sass/helpers/border.scss */
+.brad-2 {
+  border-radius: 2px;
+}
+
+/* line 5, ../../sass/helpers/border.scss */
+.brad-3 {
+  border-radius: 3px;
+}
+
+/* line 9, ../../sass/helpers/border.scss */
+.brad-4 {
+  border-radius: 4px;
+}
+
+/* line 13, ../../sass/helpers/border.scss */
+.brad-5 {
+  border-radius: 5px;
+}
+
+/* line 17, ../../sass/helpers/border.scss */
+.brad-8 {
+  border-radius: 8px;
+}
+
+/* line 21, ../../sass/helpers/border.scss */
+.brad-10 {
+  border-radius: 10px;
+}
+
+/* line 27, ../../sass/helpers/border.scss */
+.der-1-aaa {
+  border: 1px solid #aaa;
+}
+
+/* line 31, ../../sass/helpers/border.scss */
+.der-1-f8 {
+  border: 1px solid #f8f8f8;
+}
+
+/* line 35, ../../sass/helpers/border.scss */
+.der-1-e3 {
+  border: 1px solid #e3e3e3;
+}
+
+/* line 39, ../../sass/helpers/border.scss */
+.der-1-red {
+  border: 1px solid red;
+}
+
+/* line 43, ../../sass/helpers/border.scss */
+.der-1-cr {
+  border: 1px solid crimson;
+}
+
+/* line 47, ../../sass/helpers/border.scss */
+.der-1-vio {
+  border: 1px solid violet;
+}
+
+/* line 51, ../../sass/helpers/border.scss */
+.bl-e3 {
+  border-left: 1px solid #e3e3e3;
+}
+
+/* line 55, ../../sass/helpers/border.scss */
+.br-e3 {
+  border-right: 1px solid #e3e3e3;
+}
+
+/* line 59, ../../sass/helpers/border.scss */
+.bt-e3 {
+  border-top: 1px solid #e3e3e3;
+}
+
+/* line 63, ../../sass/helpers/border.scss */
+.bb-e3 {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* line 67, ../../sass/helpers/border.scss */
+.l-m-white {
+  border-left: 1px solid white;
+}
+
+/* line 71, ../../sass/helpers/border.scss */
+.r-m-white {
+  border-right: 1px solid white;
+}
+
+/* line 75, ../../sass/helpers/border.scss */
+.t-m-white {
+  border-top: 1px solid white;
+}
+
+/* line 79, ../../sass/helpers/border.scss */
+.b-m-white {
+  border-bottom: 1px solid white;
+}

@@ -1,0 +1,61 @@
+/* line 5, ../../sass/components/card.scss */
+.card {
+  position: relative;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+}
+/* line 11, ../../sass/components/card.scss */
+.card .media {
+  height: inherit;
+}
+/* line 14, ../../sass/components/card.scss */
+.card .media img {
+  height: 100%;
+}
+/* line 18, ../../sass/components/card.scss */
+.card .media .support {
+  padding: 16px;
+  font-family: roboto-r;
+  font-size: .8em;
+}
+/* line 25, ../../sass/components/card.scss */
+.card .content-media {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  text-align: center;
+}
+/* line 33, ../../sass/components/card.scss */
+.card .content-media img {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* line 41, ../../sass/components/card.scss */
+.card .content {
+  box-sizing: border-box;
+  border-top: 1px solid #e3e3e3;
+  padding: 8px;
+  background: white;
+}
+/* line 47, ../../sass/components/card.scss */
+.card .content .subject {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: roboto-r;
+  line-height: 18px;
+  font-size: 0.9em;
+  height: 36px;
+  overflow: hidden;
+}
+/* line 58, ../../sass/components/card.scss */
+.card .content .support {
+  box-sizing: border-box;
+  padding-top: 8px;
+  font-family: roboto-r;
+  font-size: 0.7em;
+  max-height: 20px;
+  overflow: hidden;
+}

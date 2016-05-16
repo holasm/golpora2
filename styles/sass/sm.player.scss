@@ -1,0 +1,213 @@
+// @import "md.scss";
+@import "variables.scss";
+@import "var.grid";
+@import "../../node_modules/bourbon/core/_bourbon";
+
+// $progress-container-width: 6;
+$time-margin: 10px;
+$time-width: 70px;
+.sm-player{
+    .controls{
+      .play{
+        height: inherit;
+        width: inherit;
+        line-height: $player-height;
+        text-align: center;
+
+        //icon-hover-boundary
+        .icon-hover-boundary{
+          cursor: pointer;
+          // background: green;
+
+          i{
+            -webkit-transition: text-shadow .3s ease-out;
+            font-size: 3em;
+          }
+        }
+
+        .icon-hover-boundary:hover{
+          opacity: 0.8;
+          
+          $icon-hover-color: aquamarine;
+          i{
+            text-shadow: 1px 1px 0px $icon-hover-color, -1px 0px 0px $icon-hover-color, 1px -1px 0px $icon-hover-color;
+            -webkit-transition: text-shadow .3s ease-out;
+          }
+        }
+      }
+    }
+
+
+    .progress-container{
+      float: left;
+      position: relative;
+      height: inherit;
+      border: $test-border-right;
+      overflow: hidden;
+
+      .progress-time{
+        float: left;
+        position: relative;
+        height: inherit;
+        width: $time-width;
+        border: $test-border-right;
+        padding-right: $time-margin;
+        padding-left: $time-margin;
+        text-align: center;
+
+        span{
+          line-height: $player-height;
+          font-size: 14px;
+        }
+      }
+
+      .progress-bar-container{
+        float: left;
+        position: relative;
+        height: $player-height;
+        border-right: $test-border-right;
+        border-left: $test-border-left;
+        // width: calc(100% - 2 * #{$time-width});
+        border-radius: 4xp;
+        // background: violet;
+
+        .progress-bar-hover-boundary{
+          position: relative;
+          width: 100%;
+          height: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 4xp;
+          // background: aquamarine;
+          cursor: pointer;
+
+          .helper{
+            position: relative;
+            width: inherit;
+            top: 50%;
+            transform: translateY(-50%);
+            @include player-progress-border-radious($player-progress-radious);
+
+            .on-hover-thick{
+              position: absolute;
+              width: inherit;
+              height: 4px;
+              top: 50%;
+              transform: translateY(-50%);
+              @include player-progress-border-radious($player-progress-radious);
+
+              .progress-bar-background{
+                width: inherit;
+                height: inherit;
+                background: rgba(236,236,236,1);
+                border-radius: 4xp;
+                @include player-progress-border-radious($player-progress-radious);
+
+                .loaded-duration{
+                  position: absolute;
+                  height: inherit;
+                  width: 0px;
+                  background: rgba(219,219,219,1);
+                  @include player-progress-border-radious($player-progress-radious);
+                }
+
+                .current-duration{
+                  position: absolute;
+                  top: 0;
+                  height: inherit;
+                  width: 0px;
+                  background: #39dea1;
+                  z-index: 4;
+                  @include player-progress-border-radious($player-progress-radious);
+                  
+                  .pointer{
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    width: 13px;
+                    height: 13px;
+                    background: #F7F5F5;
+                    border: 1px solid #c1c1c1;
+                    border-radius: 10px;
+                    transform: translate(-50%, -50%);
+                    z-index: 10;
+                  }//end pointer
+
+
+                }//end current-duration
+
+                .change-duration-onhover-1{
+                  position: absolute;
+                  left: 0;
+                  height: inherit;
+                  width: 0px;
+                  background: rgba(222,222,222, 0.6);
+                  z-index: 3;
+                  @include player-progress-border-radious($player-progress-radious);
+                }
+
+                .change-duration-onhover-2{
+                  position: absolute;
+                  height: inherit;
+                  left: 0;
+                  width: 0px;
+                  z-index: 1;
+                  background: rgba(191,191,191,0.8);
+                  @include player-progress-border-radious($player-progress-radious);
+                }
+
+                
+              }//end progress-background
+            }
+          }
+          
+        }//end progress-bar-hover-boundary
+
+      }
+
+      .duration-time{
+        float: left;
+        position: absolute;
+        height: inherit;
+        width: $time-width;
+        border: $test-border-right;
+        right:0;
+        padding-right: $time-margin;
+        padding-left: $time-margin;
+        text-align: center;
+
+        span{
+          line-height: $player-height;
+          font-size: 14px;
+        }
+      }
+
+    }//end progress-container
+}
+
+@media only screen and (min-width: $xtra-large-screen-width){
+  .sm-player{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $large-screen-width){
+  .play{
+    
+  }
+}
+
+@media only screen and (max-width: $small-screen-width){
+  .progress-time, .duration-time{
+    display: none;
+  }
+  .progress-bar-container{
+    width: 100%;
+    padding: 0 12px 0 8px;
+  }
+}
+@media only screen and (min-width: $small-screen-width){
+  .progress-bar-container{
+    width: calc(100% - 2 * #{$time-width});
+  }
+}

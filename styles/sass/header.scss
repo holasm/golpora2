@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+$nav-background: #007D6B;
+.layout.header{
+  height: $header-height;
+  
+  .header{
+    position: fixed;
+  }
+}
+
+.title a{
+  color: white;
+
+}
+// .title a:hover{
+//   color: red;
+// }
+
+.row.nav{
+  position: fixed;
+  z-index: 10;
+  overflow: visible;
+}
+.nav-fill{
+  height: 54px;
+  width: 100%;
+}
+
+.search-hint > .list-item{
+  border: none;
+}

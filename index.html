@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+<!--   <link rel="stylesheet" href="/styles/fonts/fonts.css"> -->
+  <link rel="stylesheet" href="/libs/frame/styles/css/main.css">
+  <link rel="stylesheet" href="styles/css/main.css">
+</head>
+<body>
+  
+  <div class="body">
+
+    <div class="row nav no-plr">
+        <header class="header">
+          <div class="row nav-row">
+            <div class="layout nav-layout">
+              <div class="nav">
+
+                <div class="title">
+                  <div class="hambarger-icon">
+                    <i class="material-icons">view_headline</i>
+                  </div>
+                  <a href="#"><h6 class="brand">Title</h6></a>
+                </div>
+
+                <div class="search md-hide">
+                  <div class="search-form form">
+                      <div class="form-item">
+                        <input type="text" placeholder="Search" class="from">
+                      </div>
+                      <div class="search-icon"><i class="material-icons">search</i></div>
+                  
+                    <div class="search-hint" id="search-hint">
+<!--                       <div class="list-container der-1-e3">
+            
+                        <div class="list-item plr-8 pb-8 df active">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>  
+                        <div class="list-item plr-8 pb-8 df">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>  
+                        <div class="list-item plr-8 pb-8 df">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>  
+                        <div class="list-item plr-8 pb-8 df">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>  
+                        <div class="list-item plr-8 pb-8 df">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>  
+                        <div class="list-item plr-8 pb-8 df">
+                          <div class="">
+                            <h6 class="h7 ts-_0.8">Lorem ipsum dolor sit amet</h6>
+                            <p class="fs-_8">Lorem ipsum dolor sit amet</p>
+                          </div>
+                        </div>
+                      </div> -->
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="links md-hide">
+                    <ul>
+<!--                       <li class="active">Home</li>
+                      <li>Books</li>
+                      <li>Libraries</li>
+                      <li class="user">
+                        <div class="user cir cir-40 ml-12"></div>
+                        <div class="icon"><i class="material-icons">keyboard_arrow_down</i></div>
+                      </li> -->
+                    </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </header>
+    </div>
+    <div class="nav-fill"></div>
+    <div class="layout main">
+        <div ui-view class=""></div>
+    </div>
+
+    <div class="layout footer">
+      <footer class="footer">
+        <div class="useful c-aaa tac">123</div>
+        <div class="useless c-aaa"></div>
+      </footer>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- The player -->
+  <gp-player></gp-player>
+  
+</body>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <!-- <script src="/bower_components/angular-cookies/angular-cookies.js"></script> -->
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- <script src="/bower_components/angular-route/angular-route.js"></script> -->
+    <!-- <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script> -->
+    <script src="/bower_components/angular-audio/app/angular.audio.js"></script>
+    <!-- <script src="/bower_components/material-design-lite/material.min.js"></script> -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/values/testTracks.js"></script>
+    <script src="/scripts/values/searchResultValue.js"></script>
+    
+    <script src="/scripts/services/audio.js"></script>
+    <script src="/scripts/services/search.js"></script>
+    <script src="/scripts/directives/gp-player.js"></script>
+    <script src="/scripts/directives/gp-track-cards.js"></script>
+    <script src="/scripts/directives/gp-search-result.js"></script>
+    <script src="/scripts/controllers/main.js"></script>
+    <script src="/scripts/controllers/search.js"></script>
+    <script src="/scripts/controllers/login.js"></script>
+    <script src="/scripts/controllers/dashboard.js"></script>
+    <script src="/scripts/controllers/about.js"></script>
+    <!-- <script src="/scripts/directives/golpo.js"></script> -->
+    <!-- endbuild -->
+</html>

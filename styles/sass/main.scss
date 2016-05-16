@@ -1,0 +1,31 @@
+@import "preset";
+@import "md";
+@import "variables";
+
+
+@import "header";
+@import "footer";
+@import "lg.player";
+@import "sm.player";
+@import "track-cards";
+@import "search-books";
+@import "login";
+@import "dashboard";
+@import "media.track.cards";
+
+body{
+  background-color: $global-container-background;
+}
+
+body, html{
+  font-family: roboto-r;
+}
+.main.layout{
+  position: relative;
+  
+  .container, .track-container{
+    overflow: hidden;
+  }
+}
+
+

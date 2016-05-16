@@ -1,0 +1,129 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 3, ../../sass/components/grid.show.hide.scss */
+.hide {
+  display: none;
+}
+
+/* 
+ * All hide or show are mobile first 
+ * it affects from lower to lower sizes
+ */
+@media only screen and (max-width: 480px) {
+  /* line 13, ../../sass/components/grid.show.hide.scss */
+  .xxsm-show {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 20, ../../sass/components/grid.show.hide.scss */
+  .xsm-show {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 28, ../../sass/components/grid.show.hide.scss */
+  .sm-show {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 35, ../../sass/components/grid.show.hide.scss */
+  .md-show {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 42, ../../sass/components/grid.show.hide.scss */
+  .lg-show {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  /* line 49, ../../sass/components/grid.show.hide.scss */
+  .xlg-show {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 56, ../../sass/components/grid.show.hide.scss */
+  .xxlg-show {
+    display: initial;
+  }
+}
+/* 
+ * Media hide
+ */
+@media only screen and (max-width: 480px) {
+  /* line 68, ../../sass/components/grid.show.hide.scss */
+  .xxsm-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 75, ../../sass/components/grid.show.hide.scss */
+  .xsm-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 83, ../../sass/components/grid.show.hide.scss */
+  .sm-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 90, ../../sass/components/grid.show.hide.scss */
+  .md-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 97, ../../sass/components/grid.show.hide.scss */
+  .lg-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  /* line 104, ../../sass/components/grid.show.hide.scss */
+  .xlg-hide {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  /* line 111, ../../sass/components/grid.show.hide.scss */
+  .xxlg-hide {
+    display: none;
+  }
+}

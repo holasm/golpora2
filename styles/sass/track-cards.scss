@@ -1,0 +1,253 @@
+@import "variables.scss";
+@import "var.grid";
+
+.card.song{
+  // border: 1px solid transparent;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+  .actions-head, .actions-foot{
+    z-index: 10;
+    
+    .view{
+      cursor: pointer;
+      border: 4px solid transparent;
+      border-radius: 16px; 
+      opacity: 0.5;
+      transition: all 0.3s linear;
+      box-sizing: border-box;
+    }
+    
+    .ctrl{
+      cursor: pointer;
+      border: 4px solid transparent;
+      border-radius: 16px; 
+      opacity: 0.5;
+      transition: all 0.3s linear;
+      box-sizing: border-box;
+      // background: green;
+      i{
+        font-size: 1em;
+        opacity: 0.5;
+      }
+
+      &:hover{
+        // background: #1ADC94;
+        background: #f8f8f8;
+        color: black;
+        font-weight: bold;
+        opacity: 1;
+        transition: all 0.3s linear;
+        border: 4px solid transparent;
+
+        i{
+          opacity: 1;
+          transition: opacity 0.3s linear;
+        }
+      }
+      &:active{
+        // background: #1ADC94;
+        background: #e3e3e3;
+        color: black;
+        font-weight: bold;
+        opacity: 1;
+        transition: all 0.3s linear;
+        border: 4px solid transparent;
+  
+        i{
+          opacity: 1;
+          transition: opacity 0.3s linear;
+        }
+      }
+
+    }
+  }
+  .actions-foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    .row{
+      // width: 100%;
+    }
+  }
+  .content-media{
+    z-index: 1;
+    position: relative;
+    &:hover{
+      opacity: 0.95;
+    }
+    .play-outer{
+      position: relative;
+      // background-color: rgba(255,255,255,1);
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 100px;
+      background-clip: border-box;
+      border: 2px solid transparent;
+      cursor: pointer;
+      -webkit-transition: border 0.3s linear;
+      z-index: 10;
+
+      .play-inner{
+        position: relative;
+        background-color: rgba(80,80,80,0.07);
+        margin: auto;
+        // top: 50%;
+        // transform: translateY(-50%);
+        border-radius: 100px;
+        -webkit-transition: background-color 0.3s linear, border 0.3s linear;
+        // text-align: center;
+        border: 2px solid #1ADC94;
+        box-sizing: border-box;
+
+        i{
+          position: absolute;
+          left: 2px;
+          color: rgba(51,51,51,1);
+        }
+      }
+
+      .play-inner:hover{
+        background-color: rgba(51,51,51,0.1);
+        -webkit-transition: background-color .3s linear;
+      }
+
+
+    }
+    
+      .play-outer:hover{
+        border: 2px solid #1ADC94;
+        -webkit-transition: border 0.6s linear;
+      }
+    
+      .ctrl-options{
+        position: absolute;
+        top: 0;
+        height: inherit;
+        width: inherit;
+        transition: background 2s linear;
+        
+      
+        .ctrls{
+          position: absolute;
+          bottom: 0;
+          height: 30px;
+          width: inherit;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          // background: white;
+
+          .like{
+            float: left;
+            position: relative;
+            height: 30px;
+            width: 50%;
+            border: $test-thick solid black;
+            
+            .like-icon{
+              float: left;
+              position: relative;
+              width: 25%;
+              height: inherit;
+              margin-left: 10px;
+              
+              .icon-hover-boundary{
+                position: relative;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                border-radius: 200px;
+                background: rgba(238, 238, 238, 0.5);
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border: $test-thick solid black;
+
+                i{
+                  position: relative;
+                  line-height:  25px;
+                  font-size: 16px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  // opacity: 0.4;
+                  transition: all 0.3s ease-in;
+                }
+              }
+            }
+
+            .like-count{
+              float: left;
+              right: 0;
+              // width: 50%;
+              height: inherit;
+              border: $test-thick solid black;
+              margin-left: 5px;
+              // color: #2BC78E;
+
+              p{
+                line-height: 30px;
+                text-shadow: 1px 1px 0px white;
+              }
+            }
+          }
+
+          .share{
+            float: left;
+            position: relative;
+            width: 25%;
+            height: 30px;
+
+            .share-hover-boundary{
+              position: relative;
+              height: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+              border-radius: 5px;
+              border: $test-thick solid black;
+              text-align: center;
+              // color: #2BC78E;
+
+              p{
+                line-height: 20px;
+                text-shadow: 1px 1px 0px white;
+              } 
+            }
+          }
+
+          .more-options{
+            position: absolute;
+            height: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            right: 0;
+            width: 25%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            p{
+              line-height: 20px;
+              cursor: pointer;
+              // color: #2BC78E;
+              text-shadow: 1px 1px 0px white;
+            }
+          }
+        }
+    
+    }//end .ctrl-options
+  }// ./content-media
+
+  .content{
+    .title:hover, .author:hover{
+      transition: background 2s linear;
+      cursor: pointer;
+    }
+  }
+
+}//end track .card.song

@@ -1,0 +1,81 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 3, ../../sass/components/layout.scss */
+.layout {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 332px) {
+  /* line 11, ../../sass/components/layout.scss */
+  .layout {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 18, ../../sass/components/layout.scss */
+  .layout {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 25, ../../sass/components/layout.scss */
+  .layout {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 32, ../../sass/components/layout.scss */
+  .layout {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 40, ../../sass/components/layout.scss */
+  .layout {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 47, ../../sass/components/layout.scss */
+  .layout {
+    width: 1170px;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  /* line 53, ../../sass/components/layout.scss */
+  .layout {
+    width: 1300px;
+  }
+}

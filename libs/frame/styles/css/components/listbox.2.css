@@ -1,0 +1,46 @@
+/* line 5, ../../sass/components/listbox.2.scss */
+.pub-8, .left-box, .right-box, .content-box {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 10, ../../sass/components/listbox.2.scss */
+.left-box, .right-box, .content-box {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* line 18, ../../sass/components/listbox.2.scss */
+.left-box, .right-box {
+  width: 10px;
+  z-index: 2;
+}
+
+/* line 37, ../../sass/components/listbox.2.scss */
+.left-box .vm-container {
+  margin-left: 5px;
+}
+
+/* line 41, ../../sass/components/listbox.2.scss */
+.right-box .vm-container {
+  right: 0px;
+  margin-right: 5px;
+}
+
+/* line 46, ../../sass/components/listbox.2.scss */
+.content-box {
+  position: relative;
+  width: calc(100% - 2 * 10px );
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* line 54, ../../sass/components/listbox.2.scss */
+.content-slider {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  background: yellow;
+}

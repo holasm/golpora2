@@ -1,0 +1,114 @@
+/* line 1, ../../sass/helpers/dimentions.scss */
+.h-50 {
+  height: 50px;
+}
+
+/* line 5, ../../sass/helpers/dimentions.scss */
+.h-100 {
+  height: 100px;
+}
+
+/* line 9, ../../sass/helpers/dimentions.scss */
+.h-200 {
+  height: 200px;
+}
+
+/* line 13, ../../sass/helpers/dimentions.scss */
+.h-300 {
+  height: 300px;
+}
+
+/* line 17, ../../sass/helpers/dimentions.scss */
+.h-400 {
+  height: 400px;
+}
+
+/* line 21, ../../sass/helpers/dimentions.scss */
+.h-500 {
+  height: 500px;
+}
+
+/* line 25, ../../sass/helpers/dimentions.scss */
+.w-100 {
+  width: 100px;
+}
+
+/* line 29, ../../sass/helpers/dimentions.scss */
+.w-200 {
+  width: 200px;
+}
+
+/* line 33, ../../sass/helpers/dimentions.scss */
+.w-300 {
+  width: 300px;
+}
+
+/* line 37, ../../sass/helpers/dimentions.scss */
+.w-400 {
+  width: 400px;
+}
+
+/* line 41, ../../sass/helpers/dimentions.scss */
+.w-500 {
+  width: 500px;
+}
+
+/* line 45, ../../sass/helpers/dimentions.scss */
+.hw-10 {
+  height: 10px;
+  width: 10px;
+}
+
+/* line 50, ../../sass/helpers/dimentions.scss */
+.hw-20 {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 55, ../../sass/helpers/dimentions.scss */
+.hw-30 {
+  height: 30px;
+  width: 30px;
+}
+
+/* line 60, ../../sass/helpers/dimentions.scss */
+.hw-40 {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 65, ../../sass/helpers/dimentions.scss */
+.hw-50 {
+  height: 50px;
+  width: 50px;
+}
+
+/* line 70, ../../sass/helpers/dimentions.scss */
+.hw-100 {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 75, ../../sass/helpers/dimentions.scss */
+.hw-200 {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 80, ../../sass/helpers/dimentions.scss */
+.hw-300 {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 85, ../../sass/helpers/dimentions.scss */
+.hw-400 {
+  height: 400px;
+  width: 400px;
+}
+
+/* line 90, ../../sass/helpers/dimentions.scss */
+.w-500 {
+  height: 500px;
+  width: 500px;
+}

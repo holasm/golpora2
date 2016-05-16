@@ -1,0 +1,175 @@
+@font-face {
+  font-family: roboto-m;
+  src: url("/libs/frame/styles/sass/fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: roboto-l;
+  src: url("/libs/frame/styles/sass/fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: roboto-r;
+  src: url("/libs/frame/styles/sass/fonts/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: roboto-l;
+  src: url("/libs/frame/styles/sass/fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: roboto-l;
+  src: url("/libs/frame/styles/sass/fonts/roboto/Roboto-Light.ttf");
+}
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 4, ../../sass/components/button.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 8, ../../sass/components/button.scss */
+.btn {
+  display: inline-block;
+  -webkit-user-select: none;
+  font-family: roboto-m;
+  text-align: center;
+  cursor: pointer;
+  font-size: .95em;
+  line-height: 16px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+/* line 21, ../../sass/components/button.scss */
+.btn i {
+  line-height: 16px;
+  font-size: 1.5em;
+}
+/* line 26, ../../sass/components/button.scss */
+.btn .icon.left {
+  padding-right: 0px;
+}
+/* line 30, ../../sass/components/button.scss */
+.btn .icon.right {
+  padding-left: 0px;
+}
+
+/* line 35, ../../sass/components/button.scss */
+.btn-sm {
+  font-size: .8em;
+  line-height: 12px;
+  padding: 6px 12px;
+}
+/* line 41, ../../sass/components/button.scss */
+.btn-sm i {
+  font-size: 1.3em;
+}
+
+/* line 46, ../../sass/components/button.scss */
+.btn-lg {
+  font-size: 1.2em;
+  line-height: 32px;
+  padding: 12px 32px;
+}
+/* line 52, ../../sass/components/button.scss */
+.btn-lg i {
+  font-size: 2em;
+}
+/* line 56, ../../sass/components/button.scss */
+.btn-lg .icon.left {
+  padding-right: 8px;
+}
+/* line 60, ../../sass/components/button.scss */
+.btn-lg .icon.right {
+  padding-left: 8px;
+}
+
+/* line 65, ../../sass/components/button.scss */
+.btn-group {
+  position: relative;
+  padding: 0 16px;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+/* line 75, ../../sass/components/button.scss */
+.btn-t1 {
+  background: #f1f1f1;
+  border: 1px solid transparent;
+}
+/* line 79, ../../sass/components/button.scss */
+.btn-t1:hover {
+  border: 1px solid #e3e3e3;
+}
+/* line 83, ../../sass/components/button.scss */
+.btn-t1:active {
+  box-shadow: inset 2px 2px 1px 0px #e0e0e0, inset -2px -1px 1px 0px #e0e0e0;
+  transition: border .05s linear;
+}
+
+/* line 89, ../../sass/components/button.scss */
+.btn-t2 {
+  background: white;
+  border: 1px solid #e3e3e3;
+  transition: border .3s linear;
+  border-radius: 2px;
+}
+/* line 95, ../../sass/components/button.scss */
+.btn-t2:hover {
+  border: 1px solid #21309e;
+  transition: border .3s linear;
+}
+/* line 100, ../../sass/components/button.scss */
+.btn-t2:active {
+  box-shadow: inset 2px 2px 1px 0px #e3e3e3, inset -2px -1px 1px 0px #e3e3e3;
+  transition: border .05s linear;
+}
+
+/* line 107, ../../sass/components/button.scss */
+.btn-t3 {
+  background-color: #e3e3e3;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3;
+  text-decoration: none;
+  transition: border .3s linear;
+}
+/* line 114, ../../sass/components/button.scss */
+.btn-t3:hover {
+  border: 1px solid #a1a1a1;
+  transition: border .3s linear;
+}
+/* line 119, ../../sass/components/button.scss */
+.btn-t3:active {
+  background: #d0d0d0;
+  transition: border .05s linear;
+}

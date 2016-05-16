@@ -1,0 +1,14 @@
+/* line 1, ../../sass/components/jumbotron.scss */
+.jumbotron {
+  width: 100%;
+}
+/* line 4, ../../sass/components/jumbotron.scss */
+.jumbotron .media {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+/* line 11, ../../sass/components/jumbotron.scss */
+.jumbotron .media-hfill img {
+  width: 100%;
+}

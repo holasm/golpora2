@@ -1,0 +1,11 @@
+/* line 1, ../../sass/components/links.scss */
+.link {
+  color: blue;
+  display: inline-block;
+  text-decoration: none;
+}
+/* line 6, ../../sass/components/links.scss */
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

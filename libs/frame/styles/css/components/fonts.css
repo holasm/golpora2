@@ -1,0 +1,46 @@
+/* line 8, ../../sass/components/fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: roboto-r;
+}
+
+/* line 16, ../../sass/components/fonts.scss */
+h1 {
+  padding: 16px 0;
+  font-size: 3.5em;
+}
+
+/* line 21, ../../sass/components/fonts.scss */
+h2 {
+  padding: 12px 0;
+  font-size: 3.08333em;
+}
+
+/* line 25, ../../sass/components/fonts.scss */
+h3 {
+  padding: 8px 0;
+  font-size: 2.66667em;
+}
+
+/* line 30, ../../sass/components/fonts.scss */
+h4 {
+  padding: 8px 0;
+  font-size: 2.04167em;
+}
+
+/* line 35, ../../sass/components/fonts.scss */
+h5 {
+  padding: 8px 0;
+  font-size: 1.83333em;
+}
+
+/* line 40, ../../sass/components/fonts.scss */
+h6 {
+  padding: 8px 0;
+  font-size: 1.41667em;
+}
+
+/* line 45, ../../sass/components/fonts.scss */
+.h7 {
+  padding: 8px 0;
+  font-size: 1em;
+}

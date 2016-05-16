@@ -1,0 +1,113 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 8, ../sass/search-books.scss */
+.search-book:hover .media, .search-book .active .media {
+  opacity: 0.8;
+}
+/* line 13, ../sass/search-books.scss */
+.search-book .track-info {
+  width: calc(100% - 50px);
+}
+/* line 16, ../sass/search-books.scss */
+.search-book .track-info .title {
+  padding: 0 16px 8px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 23, ../sass/search-books.scss */
+.search-book .track-info .author {
+  padding: 0 16px 6px;
+  width: 100%;
+  font-size: .8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 31, ../sass/search-books.scss */
+.search-book .track-info .audio-creator {
+  padding: 0 16px;
+  width: 100%;
+  font-size: .7em;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 44, ../sass/search-books.scss */
+  .search-book {
+    margin-bottom: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 49, ../sass/search-books.scss */
+  .search-book {
+    margin-bottom: 16px;
+  }
+  /* line 52, ../sass/search-books.scss */
+  .search-book .track-info {
+    width: calc(100% - 100px);
+  }
+  /* line 55, ../sass/search-books.scss */
+  .search-book .track-info .title {
+    font-size: 1.5em;
+    padding: 10px 16px 12px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* line 63, ../sass/search-books.scss */
+  .search-book .track-info .author {
+    font-size: 1em;
+    padding: 0 16px 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* line 71, ../sass/search-books.scss */
+  .search-book .track-info .audio-creator {
+    font-size: .9em;
+    padding: 0 16px;
+    width: 100%;
+    opacity: 0.7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

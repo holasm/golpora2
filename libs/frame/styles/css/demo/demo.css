@@ -1,0 +1,16 @@
+/* line 2, ../../sass/demo/demo.scss */
+.layout.demo .row.layer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 7, ../../sass/demo/demo.scss */
+.layout.demo .col.layer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* line 22, ../../sass/demo/demo.scss */
+section .support p {
+  line-height: 30px;
+  font-size: 1.2em;
+}

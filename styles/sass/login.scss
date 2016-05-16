@@ -1,0 +1,17 @@
+@import "var.grid";
+
+.login{
+  height: 400px;
+
+  .row{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: $medium-screen-width){
+  .form-container{
+    width: 290px;
+    margin: 0 auto;
+  }
+}

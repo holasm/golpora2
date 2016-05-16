@@ -1,0 +1,460 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+@media only screen and (max-width: 332px) {
+  /* line 16, ../../sass/components/grid.of.scss */
+  .o-xxsm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 19, ../../sass/components/grid.of.scss */
+  .o-xxsm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 22, ../../sass/components/grid.of.scss */
+  .o-xxsm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 25, ../../sass/components/grid.of.scss */
+  .o-xxsm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 28, ../../sass/components/grid.of.scss */
+  .o-xxsm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 31, ../../sass/components/grid.of.scss */
+  .o-xxsm-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 36, ../../sass/components/grid.of.scss */
+  .xxsm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 39, ../../sass/components/grid.of.scss */
+  .xxsm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 42, ../../sass/components/grid.of.scss */
+  .xxsm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 45, ../../sass/components/grid.of.scss */
+  .xxsm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 48, ../../sass/components/grid.of.scss */
+  .xxsm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 51, ../../sass/components/grid.of.scss */
+  .xxsm-c5of5 {
+    margin-left: 100%;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 59, ../../sass/components/grid.of.scss */
+  .o-xsm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 62, ../../sass/components/grid.of.scss */
+  .o-xsm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 65, ../../sass/components/grid.of.scss */
+  .o-xsm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 68, ../../sass/components/grid.of.scss */
+  .o-xsm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 71, ../../sass/components/grid.of.scss */
+  .o-xsm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 74, ../../sass/components/grid.of.scss */
+  .o-xsm-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 79, ../../sass/components/grid.of.scss */
+  .xsm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 82, ../../sass/components/grid.of.scss */
+  .xsm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 85, ../../sass/components/grid.of.scss */
+  .xsm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 88, ../../sass/components/grid.of.scss */
+  .xsm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 91, ../../sass/components/grid.of.scss */
+  .xsm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 94, ../../sass/components/grid.of.scss */
+  .xsm-c5of5 {
+    margin-left: 100%;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 101, ../../sass/components/grid.of.scss */
+  .o-sm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 104, ../../sass/components/grid.of.scss */
+  .o-sm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 107, ../../sass/components/grid.of.scss */
+  .o-sm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 110, ../../sass/components/grid.of.scss */
+  .o-sm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 113, ../../sass/components/grid.of.scss */
+  .o-sm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 116, ../../sass/components/grid.of.scss */
+  .o-sm-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 121, ../../sass/components/grid.of.scss */
+  .sm-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 124, ../../sass/components/grid.of.scss */
+  .sm-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 127, ../../sass/components/grid.of.scss */
+  .sm-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 130, ../../sass/components/grid.of.scss */
+  .sm-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 133, ../../sass/components/grid.of.scss */
+  .sm-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 136, ../../sass/components/grid.of.scss */
+  .sm-c5of5 {
+    margin-left: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 143, ../../sass/components/grid.of.scss */
+  .o-md-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 146, ../../sass/components/grid.of.scss */
+  .o-md-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 149, ../../sass/components/grid.of.scss */
+  .o-md-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 152, ../../sass/components/grid.of.scss */
+  .o-md-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 155, ../../sass/components/grid.of.scss */
+  .o-md-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 158, ../../sass/components/grid.of.scss */
+  .o-md-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 163, ../../sass/components/grid.of.scss */
+  .md-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 166, ../../sass/components/grid.of.scss */
+  .md-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 169, ../../sass/components/grid.of.scss */
+  .md-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 172, ../../sass/components/grid.of.scss */
+  .md-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 175, ../../sass/components/grid.of.scss */
+  .md-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 178, ../../sass/components/grid.of.scss */
+  .md-c5of5 {
+    margin-left: 100%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 185, ../../sass/components/grid.of.scss */
+  .o-lg-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 188, ../../sass/components/grid.of.scss */
+  .o-lg-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 191, ../../sass/components/grid.of.scss */
+  .o-lg-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 194, ../../sass/components/grid.of.scss */
+  .o-lg-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 197, ../../sass/components/grid.of.scss */
+  .o-lg-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 200, ../../sass/components/grid.of.scss */
+  .o-lg-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 205, ../../sass/components/grid.of.scss */
+  .lg-c0of5 {
+    width: 0%;
+  }
+
+  /* line 208, ../../sass/components/grid.of.scss */
+  .lg-c1of5 {
+    width: 20%;
+  }
+
+  /* line 211, ../../sass/components/grid.of.scss */
+  .lg-c2of5 {
+    width: 40%;
+  }
+
+  /* line 214, ../../sass/components/grid.of.scss */
+  .lg-c3of5 {
+    width: 60%;
+  }
+
+  /* line 217, ../../sass/components/grid.of.scss */
+  .lg-c4of5 {
+    width: 80%;
+  }
+
+  /* line 220, ../../sass/components/grid.of.scss */
+  .lg-c5of5 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  /* line 227, ../../sass/components/grid.of.scss */
+  .o-xlg-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 230, ../../sass/components/grid.of.scss */
+  .o-xlg-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 233, ../../sass/components/grid.of.scss */
+  .o-xlg-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 236, ../../sass/components/grid.of.scss */
+  .o-xlg-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 239, ../../sass/components/grid.of.scss */
+  .o-xlg-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 242, ../../sass/components/grid.of.scss */
+  .o-xlg-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 247, ../../sass/components/grid.of.scss */
+  .xlg-c0of5 {
+    width: 0%;
+  }
+
+  /* line 250, ../../sass/components/grid.of.scss */
+  .xlg-c1of5 {
+    width: 20%;
+  }
+
+  /* line 253, ../../sass/components/grid.of.scss */
+  .xlg-c2of5 {
+    width: 40%;
+  }
+
+  /* line 256, ../../sass/components/grid.of.scss */
+  .xlg-c3of5 {
+    width: 60%;
+  }
+
+  /* line 259, ../../sass/components/grid.of.scss */
+  .xlg-c4of5 {
+    width: 80%;
+  }
+
+  /* line 262, ../../sass/components/grid.of.scss */
+  .xlg-c5of5 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  /* line 269, ../../sass/components/grid.of.scss */
+  .o-xxlg-c0of5 {
+    margin-left: 0%;
+  }
+
+  /* line 272, ../../sass/components/grid.of.scss */
+  .o-xxlg-c1of5 {
+    margin-left: 20%;
+  }
+
+  /* line 275, ../../sass/components/grid.of.scss */
+  .o-xxlg-c2of5 {
+    margin-left: 40%;
+  }
+
+  /* line 278, ../../sass/components/grid.of.scss */
+  .o-xxlg-c3of5 {
+    margin-left: 60%;
+  }
+
+  /* line 281, ../../sass/components/grid.of.scss */
+  .o-xxlg-c4of5 {
+    margin-left: 80%;
+  }
+
+  /* line 284, ../../sass/components/grid.of.scss */
+  .o-xxlg-c5of5 {
+    margin-left: 100%;
+  }
+
+  /* line 289, ../../sass/components/grid.of.scss */
+  .xxlg-c0of5 {
+    width: 0%;
+  }
+
+  /* line 292, ../../sass/components/grid.of.scss */
+  .xxlg-c1of5 {
+    width: 20%;
+  }
+
+  /* line 295, ../../sass/components/grid.of.scss */
+  .xxlg-c2of5 {
+    width: 40%;
+  }
+
+  /* line 298, ../../sass/components/grid.of.scss */
+  .xxlg-c3of5 {
+    width: 60%;
+  }
+
+  /* line 301, ../../sass/components/grid.of.scss */
+  .xxlg-c4of5 {
+    width: 80%;
+  }
+
+  /* line 304, ../../sass/components/grid.of.scss */
+  .xxlg-c5of5 {
+    width: 100%;
+  }
+}

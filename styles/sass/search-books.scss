@@ -1,0 +1,82 @@
+// @import "md.scss";
+@import "variables.scss";
+@import "var.grid";
+@import "../../node_modules/bourbon/core/_bourbon";
+
+.search-book{
+  &:hover, .active{
+    .media{
+      opacity: 0.8;
+    }
+  }
+
+  .track-info{
+    width: calc(100% - 50px);
+
+    .title{
+      padding: 0 16px 8px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .author{
+      padding: 0 16px 6px;
+      width: 100%;
+      font-size: .8em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .audio-creator{
+      padding: 0 16px;
+      width: 100%;
+      font-size: .7em;
+      opacity: 0.7;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium-screen-width){
+  .search-book{
+    margin-bottom: 6px;
+  }
+}
+@media only screen and (min-width: $medium-screen-width){
+  .search-book{
+    margin-bottom: 16px;
+
+    .track-info{
+      width: calc(100% - 100px);
+
+      .title{
+        font-size: 1.5em;
+        padding: 10px 16px 12px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .author{
+        font-size: 1em;
+        padding: 0 16px 10px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .audio-creator{
+        font-size: .9em;
+        padding: 0 16px;
+        width: 100%;
+        opacity: 0.7;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

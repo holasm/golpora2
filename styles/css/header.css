@@ -1,0 +1,31 @@
+/* line 4, ../sass/header.scss */
+.layout.header {
+  height: 50px;
+}
+/* line 7, ../sass/header.scss */
+.layout.header .header {
+  position: fixed;
+}
+
+/* line 12, ../sass/header.scss */
+.title a {
+  color: white;
+}
+
+/* line 20, ../sass/header.scss */
+.row.nav {
+  position: fixed;
+  z-index: 10;
+  overflow: visible;
+}
+
+/* line 25, ../sass/header.scss */
+.nav-fill {
+  height: 54px;
+  width: 100%;
+}
+
+/* line 30, ../sass/header.scss */
+.search-hint > .list-item {
+  border: none;
+}

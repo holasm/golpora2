@@ -1,0 +1,151 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+@media only screen and (max-width: 332px) {
+  /* line 29, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 130px;
+  }
+
+  /* line 33, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 205px;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 40, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 150px;
+  }
+
+  /* line 44, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 225px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 51, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 150px;
+  }
+
+  /* line 55, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 225px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 62, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 150px;
+  }
+
+  /* line 66, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 225px;
+  }
+
+  /* line 70, ../../sass/components/book.card.row.scss */
+  .left, .right {
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 78, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 180px;
+  }
+
+  /* line 82, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 255px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 89, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 190px;
+  }
+
+  /* line 93, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 265px;
+  }
+
+  /* line 96, ../../sass/components/book.card.row.scss */
+  .left, .right {
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  /* line 102, ../../sass/components/book.card.row.scss */
+  .content-media {
+    height: 250px;
+  }
+
+  /* line 105, ../../sass/components/book.card.row.scss */
+  .content-box.books {
+    height: 325px;
+  }
+
+  /* line 108, ../../sass/components/book.card.row.scss */
+  .left, .right {
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* line 116, ../../sass/components/book.card.row.scss */
+  .book.list {
+    width: calc(100% - 2*25px);
+  }
+
+  /* line 123, ../../sass/components/book.card.row.scss */
+  .left {
+    width: 25px;
+    float: left;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 137, ../../sass/components/book.card.row.scss */
+  .right {
+    float: left;
+    width: 25px;
+    top: 0;
+    right: 0;
+  }
+  /* line 146, ../../sass/components/book.card.row.scss */
+  .right .cir {
+    right: 0;
+  }
+}

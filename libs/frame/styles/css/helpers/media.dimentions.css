@@ -1,0 +1,835 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+@media only screen and (max-width: 332px) {
+  /* line 8, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-h-100 {
+    height: 100px;
+  }
+
+  /* line 12, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-h-200 {
+    height: 200px;
+  }
+
+  /* line 16, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-h-300 {
+    height: 300px;
+  }
+
+  /* line 20, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-h-400 {
+    height: 400px;
+  }
+
+  /* line 24, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-h-500 {
+    height: 500px;
+  }
+
+  /* line 28, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-100 {
+    width: 100px;
+  }
+
+  /* line 32, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-200 {
+    width: 200px;
+  }
+
+  /* line 36, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-300 {
+    width: 300px;
+  }
+
+  /* line 40, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-400 {
+    width: 400px;
+  }
+
+  /* line 44, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-500 {
+    width: 500px;
+  }
+
+  /* line 48, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 53, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 58, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 63, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 68, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 73, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 78, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 83, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 88, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 93, ../../sass/helpers/media.dimentions.scss */
+  .xxsm-w-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 101, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-100 {
+    height: 100px;
+  }
+
+  /* line 105, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-150 {
+    height: 150px;
+  }
+
+  /* line 109, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-200 {
+    height: 200px;
+  }
+
+  /* line 113, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-300 {
+    height: 300px;
+  }
+
+  /* line 117, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-400 {
+    height: 400px;
+  }
+
+  /* line 121, ../../sass/helpers/media.dimentions.scss */
+  .xsm-h-500 {
+    height: 500px;
+  }
+
+  /* line 125, ../../sass/helpers/media.dimentions.scss */
+  .xsm-w-100 {
+    width: 100px;
+  }
+
+  /* line 129, ../../sass/helpers/media.dimentions.scss */
+  .xsm-w-200 {
+    width: 200px;
+  }
+
+  /* line 133, ../../sass/helpers/media.dimentions.scss */
+  .xsm-w-300 {
+    width: 300px;
+  }
+
+  /* line 137, ../../sass/helpers/media.dimentions.scss */
+  .xsm-w-400 {
+    width: 400px;
+  }
+
+  /* line 141, ../../sass/helpers/media.dimentions.scss */
+  .xsm-w-500 {
+    width: 500px;
+  }
+
+  /* line 145, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 150, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 155, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 160, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 165, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 170, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 175, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 180, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 185, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 190, ../../sass/helpers/media.dimentions.scss */
+  .xsm-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 198, ../../sass/helpers/media.dimentions.scss */
+  .sm-h-100 {
+    height: 100px;
+  }
+
+  /* line 202, ../../sass/helpers/media.dimentions.scss */
+  .sm-h-200 {
+    height: 200px;
+  }
+
+  /* line 206, ../../sass/helpers/media.dimentions.scss */
+  .sm-h-300 {
+    height: 300px;
+  }
+
+  /* line 210, ../../sass/helpers/media.dimentions.scss */
+  .sm-h-400 {
+    height: 400px;
+  }
+
+  /* line 214, ../../sass/helpers/media.dimentions.scss */
+  .sm-h-500 {
+    height: 500px;
+  }
+
+  /* line 218, ../../sass/helpers/media.dimentions.scss */
+  .sm-w-100 {
+    width: 100px;
+  }
+
+  /* line 222, ../../sass/helpers/media.dimentions.scss */
+  .sm-w-200 {
+    width: 200px;
+  }
+
+  /* line 226, ../../sass/helpers/media.dimentions.scss */
+  .sm-w-300 {
+    width: 300px;
+  }
+
+  /* line 230, ../../sass/helpers/media.dimentions.scss */
+  .sm-w-400 {
+    width: 400px;
+  }
+
+  /* line 234, ../../sass/helpers/media.dimentions.scss */
+  .sm-w-500 {
+    width: 500px;
+  }
+
+  /* line 238, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 243, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 248, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 253, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 258, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 263, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 268, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 273, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 278, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 283, ../../sass/helpers/media.dimentions.scss */
+  .sm-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 291, ../../sass/helpers/media.dimentions.scss */
+  .md-h-100 {
+    height: 100px;
+  }
+
+  /* line 295, ../../sass/helpers/media.dimentions.scss */
+  .md-h-200 {
+    height: 200px;
+  }
+
+  /* line 299, ../../sass/helpers/media.dimentions.scss */
+  .md-h-300 {
+    height: 300px;
+  }
+
+  /* line 303, ../../sass/helpers/media.dimentions.scss */
+  .md-h-400 {
+    height: 400px;
+  }
+
+  /* line 307, ../../sass/helpers/media.dimentions.scss */
+  .md-h-500 {
+    height: 500px;
+  }
+
+  /* line 311, ../../sass/helpers/media.dimentions.scss */
+  .md-w-100 {
+    width: 100px;
+  }
+
+  /* line 315, ../../sass/helpers/media.dimentions.scss */
+  .md-w-200 {
+    width: 200px;
+  }
+
+  /* line 319, ../../sass/helpers/media.dimentions.scss */
+  .md-w-300 {
+    width: 300px;
+  }
+
+  /* line 323, ../../sass/helpers/media.dimentions.scss */
+  .md-w-400 {
+    width: 400px;
+  }
+
+  /* line 327, ../../sass/helpers/media.dimentions.scss */
+  .md-w-500 {
+    width: 500px;
+  }
+
+  /* line 331, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 336, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 341, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 346, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 351, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 356, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 361, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 366, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 371, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 376, ../../sass/helpers/media.dimentions.scss */
+  .md-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 386, ../../sass/helpers/media.dimentions.scss */
+  .lg-h-100 {
+    height: 100px;
+  }
+
+  /* line 390, ../../sass/helpers/media.dimentions.scss */
+  .lg-h-200 {
+    height: 200px;
+  }
+
+  /* line 394, ../../sass/helpers/media.dimentions.scss */
+  .lg-h-300 {
+    height: 300px;
+  }
+
+  /* line 398, ../../sass/helpers/media.dimentions.scss */
+  .lg-h-400 {
+    height: 400px;
+  }
+
+  /* line 402, ../../sass/helpers/media.dimentions.scss */
+  .lg-h-500 {
+    height: 500px;
+  }
+
+  /* line 406, ../../sass/helpers/media.dimentions.scss */
+  .lg-w-100 {
+    width: 100px;
+  }
+
+  /* line 410, ../../sass/helpers/media.dimentions.scss */
+  .lg-w-200 {
+    width: 200px;
+  }
+
+  /* line 414, ../../sass/helpers/media.dimentions.scss */
+  .lg-w-300 {
+    width: 300px;
+  }
+
+  /* line 418, ../../sass/helpers/media.dimentions.scss */
+  .lg-w-400 {
+    width: 400px;
+  }
+
+  /* line 422, ../../sass/helpers/media.dimentions.scss */
+  .lg-w-500 {
+    width: 500px;
+  }
+
+  /* line 426, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 431, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 436, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 441, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 446, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 451, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 456, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 461, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 466, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 471, ../../sass/helpers/media.dimentions.scss */
+  .lg-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 3, ../../sass/helpers/@temp.scss */
+  /* line 481, ../../sass/helpers/media.dimentions.scss */
+  .xlg-h-100 {
+    height: 100px;
+  }
+
+  /* line 7, ../../sass/helpers/@temp.scss */
+  /* line 486, ../../sass/helpers/media.dimentions.scss */
+  .xlg-h-200 {
+    height: 200px;
+  }
+
+  /* line 11, ../../sass/helpers/@temp.scss */
+  /* line 491, ../../sass/helpers/media.dimentions.scss */
+  .xlg-h-300 {
+    height: 300px;
+  }
+
+  /* line 15, ../../sass/helpers/@temp.scss */
+  /* line 496, ../../sass/helpers/media.dimentions.scss */
+  .xlg-h-400 {
+    height: 400px;
+  }
+
+  /* line 19, ../../sass/helpers/@temp.scss */
+  /* line 501, ../../sass/helpers/media.dimentions.scss */
+  .xlg-h-500 {
+    height: 500px;
+  }
+
+  /* line 23, ../../sass/helpers/@temp.scss */
+  /* line 506, ../../sass/helpers/media.dimentions.scss */
+  .xlg-w-100 {
+    width: 100px;
+  }
+
+  /* line 27, ../../sass/helpers/@temp.scss */
+  /* line 511, ../../sass/helpers/media.dimentions.scss */
+  .xlg-w-200 {
+    width: 200px;
+  }
+
+  /* line 31, ../../sass/helpers/@temp.scss */
+  /* line 516, ../../sass/helpers/media.dimentions.scss */
+  .xlg-w-300 {
+    width: 300px;
+  }
+
+  /* line 35, ../../sass/helpers/@temp.scss */
+  /* line 521, ../../sass/helpers/media.dimentions.scss */
+  .xlg-w-400 {
+    width: 400px;
+  }
+
+  /* line 39, ../../sass/helpers/@temp.scss */
+  /* line 526, ../../sass/helpers/media.dimentions.scss */
+  .xlg-w-500 {
+    width: 500px;
+  }
+
+  /* line 43, ../../sass/helpers/@temp.scss */
+  /* line 531, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 48, ../../sass/helpers/@temp.scss */
+  /* line 537, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 53, ../../sass/helpers/@temp.scss */
+  /* line 543, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 58, ../../sass/helpers/@temp.scss */
+  /* line 549, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 63, ../../sass/helpers/@temp.scss */
+  /* line 555, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 68, ../../sass/helpers/@temp.scss */
+  /* line 561, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 73, ../../sass/helpers/@temp.scss */
+  /* line 567, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 78, ../../sass/helpers/@temp.scss */
+  /* line 573, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 83, ../../sass/helpers/@temp.scss */
+  /* line 579, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 88, ../../sass/helpers/@temp.scss */
+  /* line 585, ../../sass/helpers/media.dimentions.scss */
+  .xlg-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  /* line 594, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-h-100 {
+    height: 100px;
+  }
+
+  /* line 598, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-h-200 {
+    height: 200px;
+  }
+
+  /* line 602, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-h-300 {
+    height: 300px;
+  }
+
+  /* line 606, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-h-400 {
+    height: 400px;
+  }
+
+  /* line 610, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-h-500 {
+    height: 500px;
+  }
+
+  /* line 614, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-w-100 {
+    width: 100px;
+  }
+
+  /* line 618, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-w-200 {
+    width: 200px;
+  }
+
+  /* line 622, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-w-300 {
+    width: 300px;
+  }
+
+  /* line 626, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-w-400 {
+    width: 400px;
+  }
+
+  /* line 630, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-w-500 {
+    width: 500px;
+  }
+
+  /* line 634, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-10 {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* line 639, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-20 {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* line 644, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-30 {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* line 649, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-40 {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* line 654, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-50 {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* line 659, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-100 {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 664, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-200 {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 669, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-300 {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 674, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-400 {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 679, ../../sass/helpers/media.dimentions.scss */
+  .xxlg-hw-500 {
+    height: 500px;
+    width: 500px;
+  }
+}

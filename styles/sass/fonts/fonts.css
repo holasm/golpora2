@@ -1,0 +1,20 @@
+@font-face{
+  font-family: roboto-m;
+    src: url('/styles/sass/fonts/roboto/Roboto-Medium.ttf');
+}
+@font-face{
+  font-family: roboto-l;
+    src: url('/styles/sass/fonts/roboto/Roboto-Light.ttf');
+}
+@font-face{
+  font-family: roboto-r;
+    src: url('/styles/sass/fonts/roboto/Roboto-Regular.ttf');
+}
+@font-face{
+  font-family: roboto-l;
+    src: url('/styles/sass/fonts/roboto/Roboto-Light.ttf');
+}
+@font-face{
+  font-family: roboto-l;
+    src: url('/styles/sass/fonts/roboto/Roboto-Light.ttf');
+}

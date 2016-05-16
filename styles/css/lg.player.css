@@ -1,0 +1,603 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 6, ../sass/lg.player.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/lg.player.scss */
+.player {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 1000;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* non-prefixed version, currently
+     not supported by any browser */
+}
+
+/* line 32, ../sass/lg.player.scss */
+.player.lg-player .player-msg {
+  position: absolute;
+  bottom: 120%;
+  left: 100px;
+  padding: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* line 46, ../sass/lg.player.scss */
+.player.lg-player .player-msg .arrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 50%;
+  transform: rotateZ(45deg) translateY(-52%);
+}
+/* line 59, ../sass/lg.player.scss */
+.player.lg-player .player-container {
+  position: relative;
+  margin: auto;
+  height: inherit;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+}
+/* line 66, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls {
+  float: left;
+  position: relative;
+  width: 206px;
+  height: inherit;
+  border-right: 0px solid black;
+}
+/* line 73, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .previous, .player.lg-player .player-container .main-controls .play, .player.lg-player .player-container .main-controls .next, .player.lg-player .player-container .main-controls .repeatToggle {
+  float: left;
+  position: relative;
+  width: 51px;
+  height: inherit;
+}
+/* line 83, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .icon-hover-boundary {
+  cursor: pointer;
+}
+/* line 87, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .icon-hover-boundary i {
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 92, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .icon-hover-boundary:hover {
+  opacity: 0.8;
+}
+/* line 96, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 102, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .previous, .player.lg-player .player-container .main-controls .next {
+  position: relative;
+  margin: auto;
+}
+/* line 107, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .previous .icon-hover-boundary, .player.lg-player .player-container .main-controls .next .icon-hover-boundary {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 35px;
+}
+/* line 116, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .previous .icon-hover-boundary i, .player.lg-player .player-container .main-controls .next .icon-hover-boundary i {
+  position: relative;
+  line-height: 35px;
+  font-size: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 127, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .play {
+  position: relative;
+  margin: auto;
+}
+/* line 134, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .play .icon-hover-boundary {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 40px;
+}
+/* line 143, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .play .icon-hover-boundary i {
+  position: relative;
+  line-height: 40px;
+  font-size: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 153, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .repeatToggle {
+  position: relative;
+  margin: auto;
+}
+/* line 159, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .repeatToggle .icon-hover-boundary {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 35px;
+}
+/* line 168, ../sass/lg.player.scss */
+.player.lg-player .player-container .main-controls .repeatToggle .icon-hover-boundary i {
+  position: relative;
+  line-height: 35px;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 183, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container {
+  float: left;
+  position: relative;
+  width: 600px;
+  height: inherit;
+  border: 0px solid black;
+}
+/* line 190, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-time {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+/* line 200, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-time span {
+  line-height: 50px;
+  font-size: 14px;
+}
+/* line 206, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  border-right: 0px solid black;
+  border-left: 0px solid black;
+  margin: 0 8px;
+  width: calc(100% - 2 * 51px - 16px);
+  border-radius: 4xp;
+}
+/* line 217, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4xp;
+  cursor: pointer;
+}
+/* line 227, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper {
+  position: relative;
+  width: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 234, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick {
+  position: absolute;
+  width: inherit;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 242, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background {
+  width: inherit;
+  height: inherit;
+  background: #ececec;
+  border-radius: 4xp;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 249, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .loaded-duration {
+  position: absolute;
+  height: inherit;
+  width: 0px;
+  background: #dbdbdb;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 257, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .current-duration {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 0px;
+  background: #39dea1;
+  z-index: 4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 266, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .current-duration .pointer {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  background: #F7F5F5;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+/* line 282, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .change-duration-onhover-1 {
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: 0px;
+  background: rgba(222, 222, 222, 0.6);
+  z-index: 3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 292, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .change-duration-onhover-2 {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  width: 0px;
+  z-index: 1;
+  background: rgba(191, 191, 191, 0.8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 311, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .duration-time {
+  float: left;
+  position: absolute;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+  right: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+/* line 322, ../sass/lg.player.scss */
+.player.lg-player .player-container .progress-container .duration-time span {
+  line-height: 50px;
+  font-size: 14px;
+}
+/* line 330, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  margin-left: 10px;
+}
+/* line 338, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .volume-icon {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+}
+/* line 347, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .volume-icon .icon-hover-boundary {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  cursor: pointer;
+  border: 0px solid black;
+}
+/* line 359, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .volume-icon .icon-hover-boundary i {
+  position: relative;
+  line-height: 40px;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: text-shadow .3s ease-out;
+}
+/* line 369, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .volume-icon .icon-hover-boundary:hover {
+  opacity: 0.8;
+}
+/* line 373, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .volume-icon .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 381, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 110px;
+  border: 0px solid black;
+}
+/* line 388, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary {
+  position: relative;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-right: 10px;
+  border: 0px solid black;
+}
+/* line 398, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper {
+  position: relative;
+  width: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 404, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick {
+  height: 4px;
+  width: inherit;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 409, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  background: rgba(219, 219, 219, 0.8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 416, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .current-volume {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 50px;
+  background: #39dea1;
+  z-index: 4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 425, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .current-volume .pointer {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  background: #F7F5F5;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+/* line 441, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .change-duration-onhover-1 {
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: 0px;
+  background: rgba(222, 222, 222, 0.6);
+  z-index: 3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 451, ../sass/lg.player.scss */
+.player.lg-player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .change-duration-onhover-2 {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  width: 0px;
+  z-index: 1;
+  background: #bfbfbf;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 478, ../sass/lg.player.scss */
+.player.lg-player .player-container .info {
+  float: left;
+  height: inherit;
+}
+/* line 488, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-image {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 50px;
+}
+/* line 500, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-image .media {
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: url("../../images/1.jpg") center/cover;
+}
+/* line 508, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-image .media .icon-hover-boundary {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  top: 50%;
+}
+/* line 515, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-image .media .icon-hover-boundary i {
+  position: relative;
+  font-size: 18px;
+  opacity: 0.6;
+  transform: translateY(-50%);
+  transition: text-shadow .3s ease-out;
+}
+/* line 528, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-image .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 534, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-details {
+  height: inherit;
+}
+/* line 536, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-details .track-title {
+  height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+}
+/* line 543, ../sass/lg.player.scss */
+.player.lg-player .player-container .info .track-details .track-author {
+  height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .8em;
+}
+/* line 553, ../sass/lg.player.scss */
+.player.lg-player .player-container .like {
+  float: left;
+  position: relative;
+  height: 50px;
+  width: 60px;
+}
+/* line 560, ../sass/lg.player.scss */
+.player.lg-player .player-container .like .icon-hover-boundary {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ececec;
+}
+/* line 571, ../sass/lg.player.scss */
+.player.lg-player .player-container .like .icon-hover-boundary i {
+  position: relative;
+  line-height: 30px;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 594, ../sass/lg.player.scss */
+  .media > .icon-hover-boundary {
+    display: block;
+  }
+
+  /* line 598, ../sass/lg.player.scss */
+  .info {
+    width: 175px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 604, ../sass/lg.player.scss */
+  .media > .icon-hover-boundary {
+    display: none;
+  }
+
+  /* line 608, ../sass/lg.player.scss */
+  .info {
+    padding-left: 20px;
+    width: 225px;
+  }
+
+  /* line 613, ../sass/lg.player.scss */
+  .lg-player .main-controls {
+    margin-left: 16px;
+  }
+}

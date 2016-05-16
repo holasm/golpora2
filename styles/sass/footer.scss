@@ -1,0 +1,21 @@
+@import "variables.scss";
+$footer-background-color: #5F5F5F;
+
+.layout.footer{
+}
+
+footer.footer{
+  .useful{
+    padding: 16px;
+
+    h2{
+      position: absolute;
+      color: white;
+    }
+  }
+
+  .useless{
+    width: inherit;
+    height: $player-height;
+  }
+}

@@ -1,0 +1,280 @@
+/* // normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    768px;
+$lg-layout-width:    960px;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* 
+// normal bootstrap
+$xtra-small-screen-width:       332px;  // > xtra xtra small                  //
+$small-screen-width:            480px;  // > xtra small                       //
+$medium-screen-width:           768px;  // > small && < medium                //
+$large-screen-width:            992px;  // > medium && < large                //ipad mini
+$xtra-large-screen-width:       1200px; // > large  && < xtra large: ;        //
+$xtra-xtra-large-screen-width:  1600px; // > xtra large && < xtra xtra large: //;
+
+// normal bootstrap
+$xxsm-layout-width:  100%;
+$xsm-layout-width:   100%;
+$sm-layout-width:    100%;
+$md-layout-width:    90%;
+$lg-layout-width:    95%;
+$xlg-layout-width:   1170px;
+$xxlg-layout-width:  1300px; */
+/* line 10, ../../sass/components/navbar.scss */
+.nav-layout, .nav-row {
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #007D6B;
+  border-top: 1px solid #007D6B;
+  border-bottom: 1px solid #007D6B;
+}
+
+/* line 19, ../../sass/components/navbar.scss */
+.nav {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #007D6B;
+}
+/* line 25, ../../sass/components/navbar.scss */
+.nav .title {
+  box-sizing: border-box;
+  height: 50px;
+  float: left;
+  z-index: 3;
+  color: white;
+}
+/* line 32, ../../sass/components/navbar.scss */
+.nav .title h6 {
+  display: inline-block;
+  line-height: 50px;
+  cursor: pointer;
+}
+/* line 42, ../../sass/components/navbar.scss */
+.nav .title .hambarger-icon {
+  float: left;
+  line-height: 50px;
+  padding: 0 12px;
+}
+/* line 47, ../../sass/components/navbar.scss */
+.nav .title .hambarger-icon:hover {
+  cursor: pointer;
+  color: green;
+}
+/* line 54, ../../sass/components/navbar.scss */
+.nav .search {
+  position: absolute;
+  height: 50px;
+  box-sizing: border-box;
+  float: left;
+  z-index: 2;
+}
+/* line 62, ../../sass/components/navbar.scss */
+.nav .search .search-form {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  overflow: visible;
+}
+/* line 68, ../../sass/components/navbar.scss */
+.nav .search .search-form .search-icon {
+  display: inline;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 99.8%;
+  transform: translate(-100%, -50%);
+  padding-right: 8px;
+  padding-left: 4px;
+  background: white;
+}
+/* line 81, ../../sass/components/navbar.scss */
+.nav .search .search-form .form-item input {
+  padding: 6px 6px;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  z-index: 0;
+}
+/* line 89, ../../sass/components/navbar.scss */
+.nav .search .search-form .search-hint {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  top: 100%;
+}
+/* line 96, ../../sass/components/navbar.scss */
+.nav .search .search-form .search-hint .list-item {
+  background: white;
+  transition: background 0.3s linear;
+}
+/* line 102, ../../sass/components/navbar.scss */
+.nav .search .search-form .search-hint .list-item:hover, .nav .search .search-form .search-hint .active {
+  background: #e3e3e3;
+  cursor: pointer;
+  transition: background 0.3s linear;
+}
+/* line 115, ../../sass/components/navbar.scss */
+.nav .links {
+  box-sizing: border-box;
+  position: relative;
+  height: 50px;
+  z-index: -1;
+}
+/* line 121, ../../sass/components/navbar.scss */
+.nav .links ul {
+  position: absolute;
+  overflow: hidden;
+  height: 50px;
+  right: 0;
+}
+/* line 127, ../../sass/components/navbar.scss */
+.nav .links ul li {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  line-height: 47px;
+  padding: 0px 20px;
+  cursor: pointer;
+  color: white;
+}
+/* line 137, ../../sass/components/navbar.scss */
+.nav .links ul li:hover, .nav .links ul li.active {
+  background: #007D6B;
+  border-bottom: 6px solid white;
+}
+/* line 142, ../../sass/components/navbar.scss */
+.nav .links ul li.user {
+  padding: 0;
+  padding-right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 148, ../../sass/components/navbar.scss */
+.nav .links ul li.user:hover {
+  background: none;
+  border-bottom: none;
+}
+/* line 152, ../../sass/components/navbar.scss */
+.nav .links ul li.user:hover .icon {
+  color: #aaa;
+}
+/* line 156, ../../sass/components/navbar.scss */
+.nav .links ul li.user .user.cir {
+  background: white;
+}
+/* line 160, ../../sass/components/navbar.scss */
+.nav .links ul li.user .icon {
+  position: absolute;
+  color: #e3e3e3;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 65%;
+  display: inline;
+}
+
+@media only screen and (max-width: 332px) {
+  /* line 176, ../../sass/components/navbar.scss */
+  .title {
+    width: 50%;
+  }
+  /* line 179, ../../sass/components/navbar.scss */
+  .title h6 {
+    padding: 0;
+  }
+
+  /* line 184, ../../sass/components/navbar.scss */
+  .search {
+    width: 50%;
+    left: 50%;
+  }
+
+  /* line 188, ../../sass/components/navbar.scss */
+  .hambarger-icon {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 333px) {
+  /* line 194, ../../sass/components/navbar.scss */
+  .title {
+    width: 50%;
+  }
+  /* line 196, ../../sass/components/navbar.scss */
+  .title h6 {
+    padding: 0;
+  }
+
+  /* line 201, ../../sass/components/navbar.scss */
+  .search {
+    width: 50%;
+  }
+
+  /* line 205, ../../sass/components/navbar.scss */
+  .hambarger-icon {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 481px) {
+  /* line 211, ../../sass/components/navbar.scss */
+  .title {
+    width: 50%;
+  }
+
+  /* line 215, ../../sass/components/navbar.scss */
+  .search {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* line 222, ../../sass/components/navbar.scss */
+  .title {
+    width: 50%;
+  }
+
+  /* line 226, ../../sass/components/navbar.scss */
+  .search {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 233, ../../sass/components/navbar.scss */
+  .title {
+    width: 150px;
+  }
+  /* line 235, ../../sass/components/navbar.scss */
+  .title h6 {
+    padding: 0 16px;
+  }
+  /* line 237, ../../sass/components/navbar.scss */
+  .title h6:hover {
+    color: white;
+  }
+
+  /* line 243, ../../sass/components/navbar.scss */
+  .search {
+    width: 45%;
+    left: 150px;
+  }
+
+  /* line 248, ../../sass/components/navbar.scss */
+  .hambarger-icon {
+    display: none;
+  }
+
+  /* line 252, ../../sass/components/navbar.scss */
+  .nav-layout, .nav-row {
+    overflow: visible;
+  }
+}

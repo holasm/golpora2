@@ -1,0 +1,14 @@
+/* line 8, ../sass/footer.scss */
+footer.footer .useful {
+  padding: 16px;
+}
+/* line 11, ../sass/footer.scss */
+footer.footer .useful h2 {
+  position: absolute;
+  color: white;
+}
+/* line 17, ../sass/footer.scss */
+footer.footer .useless {
+  width: inherit;
+  height: 50px;
+}

@@ -1,0 +1,35 @@
+@import "var.grid";
+
+.container.dashboard{
+
+  .side-nav{
+    float: left;
+
+    .row div:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .dashboard-view{
+    float: left
+  }
+  .row.stats{
+    height: 1000px;
+  }
+}
+
+@media only screen and (min-width: $xtra-small-screen-width){
+  .side-nav{
+    width: 100px;
+  }
+  .dashboard-view{
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (min-width: $large-screen-width){
+  .side-nav{
+    width: 200px;
+  }
+  .dashboard-view{
+    width: calc(100% - 200px);
+  }
+}
