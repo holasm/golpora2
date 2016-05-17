@@ -1,13 +1,36 @@
 angular.module('app')
-.directive('gpTrackCards', ['trackListValue','audioService','audioUrlList','$rootScope',
- function(trackListValue, audioService, audioUrlList, $rootScope){
+.directive('gpTrackCards', 
+  ['trackListValue',
+  'audioService',
+  'audioUrlList',
+  '$rootScope',
+  'trackService',
+ function(trackListValue, audioService, audioUrlList, $rootScope, trackService){
   // Runs during compile
   return {
     // name: '',
     // priority: 1,
     // terminal: true,
     // scope: {}, // {} = isolate, true = child, false/undefined = no change
-    // controller: function($scope, $element, $attrs, $transclude) {},
+    controller: function($scope, $element, $attrs, $transclude) {
+      $scope.trackList = trackListValue;
+
+      $scope.initialize = function () {
+        //when some track is already playing dont disturb it
+        if (!audioService.playing && !(audioService.audio && audioService.audio.src)) {
+            //Just provide a dummy audio element
+            audioService.setUrl('');
+        }
+      }
+      $scope.initialize();
+      
+      //plug the data to $scope
+      trackService.getTracks(function (data){
+        $scope.trackList = data;
+        $rootScope.$broadcast('loaded:tracks', data);
+      });
+
+    },
     // require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
     // restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
     // template: '',
@@ -17,22 +40,8 @@ angular.module('app')
     templateUrl: 'views/gp-track-cards.html',
     link: function($scope, iElm, iAttrs, controller) {
       var previousPlayIndex = -1;
-      $scope.trackList = trackListValue;
       // console.log(trackListValue);
 
-      $scope.initialize = function () {
-
-        //when some track is already playing dont disturb it
-        if (!audioService.playing && !(audioService.audio && audioService.audio.src)) {
-            //Just provide a dummy audio element
-            audioService.setUrl('');
-        }
-
-        //broadcast audio:info:set-image
-        
-      }
-
-      var lock = 0;
       $scope.playPauseThisTrack = function($index) {
 
         var trackUrl = $scope.trackList[$index]['url'];
@@ -53,18 +62,7 @@ angular.module('app')
         }
       }
 
-      $scope.$watch(function(){
-        if (audioService.audio && audioService.audio.canPlay) {
-          var playable = (audioService.audio.audio.seekable.end(audioService.audio.audio.seekable.length - 1) / audioService.audio.duration);
-          if(playable && !lock){
-            // setTimeout(function (){
-            //   lock = 1;
-            //   audioService.play();
-            //   $scope.log  = 'done'
-            // },5000);
-          }
-        }
-      })
+
       /*
       |--------------------------------------------------------------------------
       | Listen to play | pause broadcasts
@@ -91,9 +89,6 @@ angular.module('app')
           });
         }
       });
-
-      
-      $scope.initialize();
     }//end return
 
 

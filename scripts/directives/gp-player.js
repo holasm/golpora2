@@ -4,10 +4,10 @@ angular.module('app')
 [ '$window',
   'viewportValue',
   'audioService',
-  'trackListValue',
    'keysService',
    '$rootScope',
-  function($window, viewportValue, audioService, trackListValue, keysService, $rootScope){
+   'trackService',
+  function($window, viewportValue, audioService, keysService, $rootScope, trackService){
   // Runs during compile
 
     return {
@@ -74,6 +74,7 @@ angular.module('app')
             preMuteVolume: 0.5
           };
           $scope.track = {}
+          $scope.trackList = [];
 
           $scope.$watch(function() {
 
@@ -123,7 +124,7 @@ angular.module('app')
             if(!id){
               id = 0;
             }
-            $scope.track = trackListValue[id];
+            $scope.track = $scope.trackList[id];
           }
           $scope.setTrackInfo();
           
@@ -380,7 +381,7 @@ angular.module('app')
                   width: 0 +'%'
                 });
 
-            audioService.search(trackListValue, function (id){
+            audioService.search($scope.trackList, function (id){
               $scope.setTrackInfo(id);
             });
           })
@@ -392,14 +393,14 @@ angular.module('app')
           $scope.log = '';
           // //Event listeners for player controls
           $scope.playPause =  function() {
+
             if (audioService.playing) {
               audioService.pause();
             }else{
 
               //when audio element is a dummy
               if (audioService.playUrl === '') {
-                console.log(123);
-                audioService.setUrl(trackListValue[0].url);
+                audioService.setUrl($scope.trackList[0].url);
               }
 
               //when track is played fully
@@ -415,7 +416,7 @@ angular.module('app')
               }else{ //track is still remaining and in paused state
                 audioService.play();
               }
-              $scope.log = 'done-from-playPause';
+              // $scope.log = 'done-from-playPause';
             }
           }; 
 
@@ -427,12 +428,12 @@ angular.module('app')
             }
 
             //find the current track position
-            audioService.search(trackListValue, function (id){
-              if( trackListValue[++id] ){
-                audioService.setUrl( (trackListValue[id]).url ).play();
+            audioService.search($scope.trackList, function (id){
+              if( $scope.trackList[++id] ){
+                audioService.setUrl( ($scope.trackList[id]).url ).play();
               }else{
                 id = 0;
-                audioService.setUrl( trackListValue[id].url ).play();
+                audioService.setUrl( $scope.trackList[id].url ).play();
               }
             })
             //now play the next track
@@ -445,12 +446,12 @@ angular.module('app')
             }
 
             //find the current track position
-            audioService.search(trackListValue, function (id){
-              if( trackListValue[--id] ){
-                audioService.setUrl( (trackListValue[id]).url ).play();
+            audioService.search($scope.trackList, function (id){
+              if( $scope.trackList[--id] ){
+                audioService.setUrl( ($scope.trackList[id]).url ).play();
               }else{
-                id = trackListValue.length - 1;
-                audioService.setUrl( trackListValue[id].url ).play();
+                id = $scope.trackList.length - 1;
+                audioService.setUrl( $scope.trackList[id].url ).play();
               }
             })
             //now play the next track
@@ -460,7 +461,7 @@ angular.module('app')
 
           //update track info
           $rootScope.$on('audio:play', function(event , data) {
-            angular.forEach(trackListValue, function(val, index) {
+            angular.forEach($scope.trackList, function(val, index) {
 
               if (val.url == data.url) {
                 
@@ -492,6 +493,10 @@ angular.module('app')
 
             });//end forEach
           });
+
+          $rootScope.$on('loaded:tracks', function(e, data){
+            $scope.trackList = data;
+          })
 
           $(window).on('keyup', function(e) {
             e.preventDefault();
