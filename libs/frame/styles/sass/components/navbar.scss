@@ -89,7 +89,7 @@ $title-left-extrapad: 30px;
     .search-hint{
       position: absolute;
       width: 100%;
-      height: 100px;
+      overflow: visible;
       z-index: 10;
       top: 100%;
       

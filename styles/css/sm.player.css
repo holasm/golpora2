@@ -95,7 +95,7 @@ $xxlg-layout-width:  1300px; */
   width: 100%;
   height: 24px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   border-radius: 4xp;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@ $xxlg-layout-width:  1300px; */
   position: relative;
   width: inherit;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -115,7 +115,7 @@ $xxlg-layout-width:  1300px; */
   width: inherit;
   height: 4px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -162,7 +162,7 @@ $xxlg-layout-width:  1300px; */
   background: #F7F5F5;
   border: 1px solid #c1c1c1;
   border-radius: 10px;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   z-index: 10;
 }
 /* line 139, ../sass/sm.player.scss */
@@ -206,27 +206,53 @@ $xxlg-layout-width:  1300px; */
   line-height: 50px;
   font-size: 14px;
 }
+/* line 187, ../sass/sm.player.scss */
+.sm-player .track-info {
+  margin-top: 4px;
+}
+/* line 191, ../sass/sm.player.scss */
+.sm-player .track-info .icon-hover-boundary {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  border-radius: 30px;
+  cursor: pointer;
+}
+/* line 202, ../sass/sm.player.scss */
+.sm-player .track-info .icon-hover-boundary i {
+  position: relative;
+  line-height: 30px;
+  font-size: 25px;
+  left: 50%;
+  color: white;
+  -webkit-transform: translateX(-50%);
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in;
+}
 
 @media only screen and (min-width: 1200px) {
-  /* line 189, ../sass/sm.player.scss */
+  /* line 218, ../sass/sm.player.scss */
   .sm-player {
     display: none;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 201, ../sass/sm.player.scss */
+  /* line 230, ../sass/sm.player.scss */
   .progress-time, .duration-time {
     display: none;
   }
 
-  /* line 204, ../sass/sm.player.scss */
+  /* line 233, ../sass/sm.player.scss */
   .progress-bar-container {
     width: 100%;
     padding: 0 12px 0 8px;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 210, ../sass/sm.player.scss */
+  /* line 239, ../sass/sm.player.scss */
   .progress-bar-container {
     width: calc(100% - 2 * 70px);
   }

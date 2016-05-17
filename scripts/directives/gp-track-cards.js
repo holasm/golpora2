@@ -24,15 +24,15 @@ angular.module('app')
 
         //when some track is already playing dont disturb it
         if (!audioService.playing && !(audioService.audio && audioService.audio.src)) {
-          if ($scope.trackList[0]) {
-            audioService.setUrl($scope.trackList[0].url);
-          }
+            //Just provide a dummy audio element
+            audioService.setUrl('');
         }
 
         //broadcast audio:info:set-image
         
       }
 
+      var lock = 0;
       $scope.playPauseThisTrack = function($index) {
 
         var trackUrl = $scope.trackList[$index]['url'];
@@ -49,9 +49,22 @@ angular.module('app')
           }
         }else{
           audioService.setUrl(trackUrl).play();
+          // lock = 0;
         }
       }
 
+      $scope.$watch(function(){
+        if (audioService.audio && audioService.audio.canPlay) {
+          var playable = (audioService.audio.audio.seekable.end(audioService.audio.audio.seekable.length - 1) / audioService.audio.duration);
+          if(playable && !lock){
+            // setTimeout(function (){
+            //   lock = 1;
+            //   audioService.play();
+            //   $scope.log  = 'done'
+            // },5000);
+          }
+        }
+      })
       /*
       |--------------------------------------------------------------------------
       | Listen to play | pause broadcasts

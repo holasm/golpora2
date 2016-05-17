@@ -6,7 +6,7 @@
       <div class="controls col xsm-c2 sm-c1 md-c1 no-plr">
         <div class="mid-h">
           <div class="play">
-            <div class="icon-hover-boundary" ng-click="playPause()">
+            <div class="icon-hover-boundary" ng-click="playPause()" ng-touch="playPause()">
               <i class="material-icons" ng-hide="playing">play_arrow</i>
               <i class="material-icons" ng-show="playing">pause</i>
             </div>
@@ -17,6 +17,7 @@
         <div class="progress-time"><span>{{progressInTime}}</span></div>
         
         <div class="progress-bar-container">
+        {{ log }}
           <div class="progress-bar-hover-boundary" ng-mousemove="showTrackChangeHint($event)" ng-mouseleave="hideTrackChangeHint()" ng-click="changeCurTrackDuration($event)">
             <div class="helper">
             <div class="on-hover-thick" style="height: {{progressHeight}}px">
@@ -38,8 +39,11 @@
         <div class="duration-time"><span>{{duration}}</span></div>
       </div>
       <div class="col xsm-c2 sm-c1 md-c1 no-plr">
-        <div class="hw-40 mid-h c-aaa vm-align">
+        <div class="track-info hw-40 mid-h" style="background: url({{ track.img }}) center / cover">
           <!-- like -->
+            <div class="icon-hover-boundary"  ng-click="like()">
+              <!-- <i class="material-icons">favorite</i> -->
+            </div>
         </div>
       </div>
 
@@ -166,15 +170,15 @@
       <div class="track-info">
         <div class="info">
           <div class="track-image">
-            <div class="media">
+            <div class="media" style="background: url({{ track.img }}) center / cover">
               <div class="icon-hover-boundary" ng-click="like()">
                 <i class="material-icons">favorite</i>
               </div>
             </div>
           </div>
           <div class="track-details">
-            <p class="track-title">Amader asd asd sd ad.</p>
-            <p class="track-author">Saradindu OKasdf</p>
+            <p class="track-title">{{ track.title }}</p>
+            <p class="track-author">{{ track.author }}</p>
 
           </div>
         </div>

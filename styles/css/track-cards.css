@@ -86,7 +86,7 @@ $xxlg-layout-width:  1300px; */
 /* line 47, ../sass/track-cards.scss */
 .card.song .actions-head .ctrl:hover i, .card.song .actions-foot .ctrl:hover i {
   opacity: 1;
-  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
 }
 /* line 52, ../sass/track-cards.scss */
 .card.song .actions-head .ctrl:active, .card.song .actions-foot .ctrl:active {
@@ -123,7 +123,7 @@ $xxlg-layout-width:  1300px; */
   position: relative;
   margin: auto;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   border-radius: 100px;
   background-clip: border-box;
   border: 2px solid transparent;

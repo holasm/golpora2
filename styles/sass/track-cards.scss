@@ -46,7 +46,7 @@
 
         i{
           opacity: 1;
-          transition: opacity 0.3s linear;
+          -webkit-transition: opacity 0.3s linear;
         }
       }
       &:active{
@@ -86,7 +86,7 @@
       // background-color: rgba(255,255,255,1);
       margin: auto;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
       border-radius: 100px;
       background-clip: border-box;
       border: 2px solid transparent;

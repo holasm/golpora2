@@ -12,6 +12,7 @@ angular
   .module('app', [
     // 'ngCookies',
     'ngResource',
+    'ngTouch',
     'ui.router',
     // 'ngSanitize',
     'ngAudio'

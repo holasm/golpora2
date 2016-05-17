@@ -22,7 +22,6 @@ angular.module('app')
     self.setUrl = function(trackUrl) {
       if (trackUrl) {
         if (self.playUrl !== trackUrl) {
-
           /*
           | save previous audio if exists
           */
@@ -43,6 +42,9 @@ angular.module('app')
             self.audio = audioObjStore[self.playUrl];
           }
           self.audio.setVolume(self.volume);
+
+          //
+          $rootScope.$broadcast('audio:change:track');
         }
         window.ad = self.audio;
       }
@@ -51,10 +53,13 @@ angular.module('app')
     }
 
     self.play = function(url) {
-      if (self.audio) {
-        self.audio.play();
-        self.playing = 1;
-      }
+
+//      setTimeout(function(){
+        if (self.audio) {
+          self.audio.play();
+          self.playing = 1;
+        }
+//      }, 3000);
       
       //broadcast event      
       if (url) { 
@@ -81,12 +86,13 @@ angular.module('app')
     }//end pause
 
     self.search = function (trackListValue, cb){
-      for (var i = 0; i < trackListValue.length; i++) {
-        if ((trackListValue[i]).url === self.audio.src){
-          cb(i);
-          break;
+      if (self.audio) {
+        for (var i = 0; i < trackListValue.length; i++) {
+          if ((trackListValue[i]).url === self.playUrl){
+            cb(i);
+            break;
+          }
         }
-
       }
     }
 

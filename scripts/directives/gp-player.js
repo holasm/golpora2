@@ -73,7 +73,7 @@ angular.module('app')
             mute: 0,
             preMuteVolume: 0.5
           };
-          
+          $scope.track = {}
 
           $scope.$watch(function() {
 
@@ -119,6 +119,14 @@ angular.module('app')
             }//if audio exists
           })//end $scope.$watch
 
+          $scope.setTrackInfo = function (id){
+            if(!id){
+              id = 0;
+            }
+            $scope.track = trackListValue[id];
+          }
+          $scope.setTrackInfo();
+          
           function formatTime(time) {
             var totalSeconds = Math.round(time);
             var hours = Math.floor(totalSeconds / (60*60));
@@ -151,6 +159,7 @@ angular.module('app')
               if (!progress) {
                 progress = $scope.audio.progress;
               }
+
               if (typeof(progress) === 'number') {
                 el.currentDuration.css({
                   width:  (progress * 100) +'%'
@@ -168,7 +177,7 @@ angular.module('app')
           }
 
 
-          // //initiallize
+          // //initialize
           // var width = $window.innerWidth;
           // var marginLeft = el.progressBarBackground.css('margin-left');
 
@@ -363,16 +372,50 @@ angular.module('app')
             $scope.updateVolumeIcon(data.vol);
           })
 
+          $rootScope.$on('audio:change:track', function(event, data) {
+            el.currentDuration.css({
+                  width: 0 +'%'
+                });
+            el.loadedDuration.css({
+                  width: 0 +'%'
+                });
+
+            audioService.search(trackListValue, function (id){
+              $scope.setTrackInfo(id);
+            });
+          })
+
           $scope.like = function() {
             console.log('+1 like');
           }
 
+          $scope.log = '';
           // //Event listeners for player controls
           $scope.playPause =  function() {
             if (audioService.playing) {
               audioService.pause();
             }else{
-              audioService.play();
+
+              //when audio element is a dummy
+              if (audioService.playUrl === '') {
+                console.log(123);
+                audioService.setUrl(trackListValue[0].url);
+              }
+
+              //when track is played fully
+              if ( 100 * audioService.audio.progress > 99 ) {
+                $scope.setTrackDuration(0.001);
+
+                //due to asyncronus nature of the setTrackDuration 
+                //call .play() little later
+                setTimeout(function name(){
+                  audioService.play();
+                },300);
+
+              }else{ //track is still remaining and in paused state
+                audioService.play();
+              }
+              $scope.log = 'done-from-playPause';
             }
           }; 
 
@@ -505,9 +548,11 @@ angular.module('app')
               if (volume > 0) {
                 $scope.setVolume(volume/100); 
               }else{
-                $scope.setVolume(0);
+                $scope.setVolume(0.001);
               }
             });
+
+            // console.log(e);
           });//end on-keyup
 
         }//end link
